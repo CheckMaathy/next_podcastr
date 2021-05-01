@@ -1,5 +1,5 @@
 .headerContainer {
-  background: var(--white);
+  background: var(--opal);
   height: 6.5rem;
   display: flex;
 
@@ -18,5 +18,10 @@
     margin-left: auto;
     text-transform: capitalize;
     
+  }
+
+  .switchButton {
+    margin-left: 1rem;
+    justify-content: space-between;
   }
 }

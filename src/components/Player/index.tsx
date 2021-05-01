@@ -102,9 +102,9 @@ export function Player() {
                 max={episode.duration}
                 value={progress}
                 onChange={handleSeek}
-                trackStyle={{ backgroundColor: '#04d361' }}
-                railStyle={{ backgroundColor: '#9f75ff' }}
-                handleStyle={{ borderColor: '#04d361', borderWidth: 4 }}
+                trackStyle={{ backgroundColor: '#0AC2B9' }}
+                railStyle={{ backgroundColor: '#A18CA6' }}
+                handleStyle={{ borderColor: '#0AC2B9', borderWidth: 4 }}
               />
             ) : (
                 <div className={styles.emptySlider} />
