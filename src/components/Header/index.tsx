@@ -1,5 +1,6 @@
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
+import Link from 'next/link';
 import { shade } from 'polished';
 
 import Switch from 'react-switch';
@@ -17,8 +18,11 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <img src="/logo.svg" alt="logo_podcastr" />
-
+      <Link href="/">
+        <button type="button" className={styles.homeButton}>
+          <img src="/logo.svg" alt="logo_podcastr" />
+        </button>
+      </Link>
       <p>The best for you listen</p>
       <span>{currentDate}</span>
       <Switch
